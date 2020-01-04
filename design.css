@@ -1,0 +1,308 @@
+html, body{
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: content-box;
+    /* background-image: linear-gradient(#FFB4AD, #FFDEDB); */
+}
+
+.tabbar{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.kepala{    
+    width: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-image: linear-gradient(white, #FFDEDB);
+    padding: 0px;
+}
+
+.wtf{    
+    width: 120px;    
+}
+
+.logo{
+    padding-left: 30px;
+    float: left;
+    width: 350px;    
+}
+
+
+.menu{        
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-top: auto;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    background-image: linear-gradient(to top, #FFDEDB, #FFDEDA);
+    margin-bottom: 0px;
+    
+}
+
+.transparan{
+    opacity: 0.5;
+}
+
+.menu li{
+    float: left;
+    padding: 15px 30px 15px 30px;
+}
+
+.down{
+    position: relative;
+    display: inline-block;
+}
+/* 
+.down .dd{
+    opacity: 0;
+    z-index: 2;
+    position: absolute;      
+    top: 48px;  
+    left: 10px;    
+    padding: 28px;
+    padding-top: 0px;
+    padding-bottom: 0;     
+    transition: all 1s ease-in;
+    background-image: linear-gradient(to top, #FFDEDB, #FFDEDA);     
+}
+
+.down .dd a{
+    display: block;    
+    clear: both;
+    padding-bottom: 20px;
+}
+
+.down:hover .dd{
+    opacity: 1;
+}
+
+.down .dd a{
+    padding-top: 12px;
+} */
+
+
+.menu li a, .down .dd a{
+    text-decoration: none;
+    color: white;
+    transition: all 1s ease;
+}
+
+ li a:hover, .dd a:hover{
+    color: black;
+}
+
+.carousel-item{
+    width: auto;
+    height: 120vh;    
+    overflow: hidden;    
+}
+
+.carousel{
+    margin-top: 30px;
+}
+
+img{
+    width: 100%;         
+}
+
+h5, p{
+    font-weight: bold;
+}
+
+
+
+
+
+.header {
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    padding-top: 100px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+  }
+
+.row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;    
+    width: 90%;
+    
+  }
+
+  .cont{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .column {
+    -ms-flex: 33.33%; 
+    flex: 33.33%;
+    max-width: 33.33%;    
+    position: relative;
+
+  }    
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .ukuran .artis{
+      position: absolute;
+      padding: 10px;
+      border: 1px solid white ;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+        font-size: 20px;
+        font-weight: bold;              
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+  }
+
+  .column .ukuran {
+    height: 370px;
+    width: auto;      
+    position: relative;
+    margin-top: 4px;
+    margin-right: 4px;
+  }
+
+  .body-ticket{
+    width: 100%;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+  * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+  .desk {
+  margin: 0;
+  text-align: center;
+  padding: 30px;
+  padding-top: 10px;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  }
+
+  .footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-image: linear-gradient(to top, #FFDEDB, #FFDEDA);
+    margin: 0px;
+  }
+
+  .footer img{
+    width: 120px;
+  }
